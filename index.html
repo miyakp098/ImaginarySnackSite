@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像と価格の表示</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="news" class="big-bg">
+        <header class="page-header wrapper">
+            <h1><a href="news.html"></a>おかし一覧</h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="news.html">ホーム</a></li>
+                    <li><a href="menu.html">メニュー</a></li>
+                    <li><a href="contact.html">購入履歴</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div><!-- #home -->
+    <div class="container">
+        <main>
+            <div id="image-container"></div>
+        </main>
+        <aside>
+            <div id="total-container">
+                <div id="total-price">合計購入金額: ¥0</div>
+                <!-- 購入したお菓子のリストを表示するためのリスト -->
+                <ul id="purchased-items"></ul>
+            </div>
+          </aside>
+          
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

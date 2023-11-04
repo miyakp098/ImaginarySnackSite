@@ -1,0 +1,156 @@
+/* HEADER
+------------------------*/
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-left: 36px;
+}
+
+.main-nav a {
+  color: #432;
+}
+
+.main-nav a:hover {
+  color: #0bd;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #7be6bb;
+  border-radius: 8px;
+}
+
+.page-header h1 {
+  color: #432;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 4%;
+}
+/* HEADER
+------------------------*/
+
+/* MAIN & ASIDE
+------------------------*/
+.container {
+  display: flex;
+}
+
+main {
+  width: 70%;       /* メインコンテンツの幅を80%に設定 */
+  margin: 0 7%;   /* 上下のマージンは0、左右のマージンは自動（中央揃え） */
+  background-color: #f5f5f5;  /* 薄いグレー */
+  margin-top: 20px; /* この値を調整して、望む間隔を設定 */
+  border-radius: 8px; /* 画像の角を少し丸める */
+}
+
+aside {
+  width: 15%;  /* これを追加して、幅を350pxに設定 */
+  background-color: #f5f5f5;  /* 薄いグレー */
+  margin-top: 20px; /* この値を調整して、望む間隔を設定 */
+  border-radius: 8px; /* 画像の角を少し丸める */
+  padding: 15px;    /* paddingを追加して内容と枠線の間にスペースを作る */
+
+  position: fixed;  /* これを追加 */
+  right: 20px;        /* 右端に固定するために追加 */
+  top: 130px;       /* 画面の上端からの位置（必要に応じて調整してください） */
+  height: 800px;  /* 画面の高さから上下のpaddingを引く（この場合、20px * 2 = 40px） */
+
+}
+/* MAIN & ASIDE
+------------------------*/
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #e0e0e0;
+}
+
+#image-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.image-wrapper {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 20px;
+  position: relative;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.image-wrapper div {
+  font-size: 18px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.image-wrapper > div {
+  text-align: center;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+/* ASIDE - TOTAL CONTAINER
+------------------------*/
+#total-container {
+  margin-top: 10px;
+}
+
+#total-price {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right; /* テキストを右詰めにする */
+  border-bottom: 2px solid #432; /* 黒の2ピクセルの固い線 */
+  margin-bottom: 10px; /* ラインとリスト項目との間に余白を追加 */
+}
+/* ASIDE - TOTAL CONTAINER
+------------------------*/
+
+.price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.buy-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #45a049;
+}
+
+.subtotal {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 4px; /* 名前/個数と小計の間にスペースを追加 */
+  text-align: right; /* テキストを右詰めにする */
+}
+
